@@ -26,7 +26,14 @@ Each .py file runs a separate task.
 - The functions of the convolutions  for A and B are implemented in this file.
 
 ## CPU / GPU test comparison
-A test was conducted with a vector of 8 000 000 random elements.
+### A test was conducted with a vector of 8 000 000 random elements.
+
 <img src="screenshots/results.png">
+
 The file that were convoluted required about `12 seconds` in Python and just `1.9 seconds` in CUDA.
 This is because the process of operations that can be done in parallel on a graphics card is more efficient.
+
+### Specifications used for the test:
+- CPU: IntelCore - Kabylake Core i5-7300HQ @ 2500 MHz
+- RAM:  8 GB DDR4 16GB DDR4 @ 2400 MHz
+- GPU: GTX 1050 with 2GB GDDR5
