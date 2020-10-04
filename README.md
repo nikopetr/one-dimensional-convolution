@@ -27,6 +27,6 @@ Each .py file runs a separate task.
 
 ## CPU / GPU test comparison
 A test was conducted with a vector of 8 000 000 random elements.
-<img src="Screenshots/results.png">
+<img src="screenshots/results.png">
 The file that were convoluted required about `12 seconds` in Python and just `1.9 seconds` in CUDA.
 This is because the process of operations that can be done in parallel on a graphics card is more efficient.
