@@ -12,8 +12,8 @@ It is known that another way to get the convolution of two signals is to first c
 Through fast algorithms for calculating the Fourier transform of a discrete sequence (eg Cooley-Tukey), we can calculate the transformation with time complexity of O(nlogn).
 With this method the calculation of the a convolution algorithm totally takes O(nlogn), since we will essentially need to do the transformation three times and a simple element-by-element multiplication.
 
-## The Python files
-Each .py file runs a separate task.
+## Python code files
+Each .py file runs a separate task. The code is well commented and explains the methods/processes.
 ### A1.py
 - Creates a vector (random float array) of random numbers A of length N> 10, where N input will be requested by the user, which is then convoluted with the vector: `[0.2 0.2 0.2 0.2 0.2]`.
 ### A2.py
