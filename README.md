@@ -14,16 +14,16 @@ With this method the calculation of the a convolution algorithm totally takes O(
 
 ## The Python files
 Each .py file runs a separate task.
-## A1) 
-Creates a vector (random float array) of random numbers A of length N> 10, where N input will be requested by the user, which is then convoluted with the vector: `[0.2 0.2 0.2 0.2 0.2]`.
-## A2)
-Calculates the result of the convolution between the given sample_audio.wav and pink_noise.wav audio files and writes it to the new pinkNoise_sampleAudio.wav audio file.
-Then by creating our own white noise signal, we calculate the effect of its convolution with sample_audio.wav and writes it to the new whiteNoise_sampleAudio.wav audio file.
-## B)
-Implements the convoluton function in a version that runs on an Nvidia graphics card with the help of CUDA by using our user-defined raw Kernel.
+### A1.py
+- Creates a vector (random float array) of random numbers A of length N> 10, where N input will be requested by the user, which is then convoluted with the vector: `[0.2 0.2 0.2 0.2 0.2]`.
+### A2.py
+- Calculates the result of the convolution between the given sample_audio.wav and pink_noise.wav audio files and writes it to the new pinkNoise_sampleAudio.wav audio file.
+- Creates a white noise signal, then caulates the effect of its convolution with sample_audio.wav and writes it to the new whiteNoise_sampleAudio.wav audio file.
+### B.py
+- Runs a convolution function in a version that runs on an Nvidia graphics card with the help of CUDA. The CUDA implementation used Python's CuPy library in conjunction with a user-defined CUDA kernel, which requires a small C / C ++ snippet of code that CuPy automatically collects and synthesizes to create a CUDA binary.
 
-
-
+### MyFunctions.py.
+- The functions of the convolutions  for A and B are implemented in this file.
 
 ## CPU / GPU test comparison
 A test was conducted with a vector of 8 000 000 random elements.
