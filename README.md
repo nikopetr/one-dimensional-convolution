@@ -25,7 +25,7 @@ Each .py file runs a separate task.
 ### MyFunctions.py.
 - The functions of the convolutions  for A and B are implemented in this file.
 
-## CPU / GPU test comparison
+## CPU / GPU test run comparison
 ### A test was conducted with a vector of 8 000 000 random elements.
 
 <img src="screenshots/results.png">
