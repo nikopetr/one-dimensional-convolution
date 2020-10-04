@@ -13,7 +13,7 @@ Through fast algorithms for calculating the Fourier transform of a discrete sequ
 With this method the calculation of the a convolution algorithm totally takes O(nlogn), since we will essentially need to do the transformation three times and a simple element-by-element multiplication.
 
 ## Python code files
-Each .py file runs a separate task. The code is well commented and explains the methods/processes.
+Each .py file runs a separate task. The code itself is well commented and explains the methods/processes.
 ### A1.py
 - Creates a vector (random float array) of random numbers A of length N> 10, where N input will be requested by the user, which is then convoluted with the vector: `[0.2 0.2 0.2 0.2 0.2]`.
 ### A2.py
