@@ -12,11 +12,21 @@ It is known that another way to get the convolution of two signals is to first c
 Through fast algorithms for calculating the Fourier transform of a discrete sequence (eg Cooley-Tukey), we can calculate the transformation with time complexity of O(nlogn).
 With this method the calculation of the a convolution algorithm totally takes O(nlogn), since we will essentially need to do the transformation three times and a simple element-by-element multiplication.
 
-## The python files
-The first task requires the generation of a random float array which is then convoluted with: `[0.2 0.2 0.2 0.2 0.2]`
+## The Python files
+Each .py file runs a separate task.
+## A1) 
+Creates a vector (random float array) of random numbers A of length N> 10, where N input will be requested by the user, which is then convoluted with the vector: `[0.2 0.2 0.2 0.2 0.2]`.
+## A2)
+Calculates the result of the convolution between the given sample_audio.wav and pink_noise.wav audio files and writes it to the new pinkNoise_sampleAudio.wav audio file.
+Then by creating our own white noise signal, we calculate the effect of its convolution with sample_audio.wav and writes it to the new whiteNoise_sampleAudio.wav audio file.
+## B)
+Implements the convoluton function in a version that runs on an Nvidia graphics card with the help of CUDA by using our user-defined raw Kernel.
 
 
-## CPU / GPU comparison on execution time
+
+
+## CPU / GPU test comparison
 A test was conducted with a vector of 8 000 000 random elements.
-
-The two WAV files that were convoluted required about `13.3 minutes` in C++ and just `1.3 seconds` in CUDA.
+ IMG
+The file that were convoluted required about `12 seconds` in Python and just `1.9 seconds` in CUDA.
+This is because the process of operations that can be done in parallel on a graphics card is more efficient.
