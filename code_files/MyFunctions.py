@@ -12,8 +12,8 @@ def MyConvolveOld(A, B):
     for n in range(lenC):
         sum = 0
         for k in range(len(A)):
-            if n - k >= 0 and len(B) > n - k:  # Den iparxei epikalipsi
-                sum += A[k] * B[n - k] # Orismos Sineliksis
+            if n - k >= 0 and len(B) > n - k:  # There is no overlap
+                sum += A[k] * B[n - k] # Convolution's definition
 
         C.append(sum)
 
